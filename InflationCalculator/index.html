@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main id="main">
+        <h1 class="titleText">Inflation Calculator</h1>
+        <ol class="subtitleText"> 
+            <li><h3>Input the value you wish and enter</h3></li>
+            <li><h3>Input the year you would of added the money</h3></li>
+            <li><h3>Then input the year you wish to compare</h3></li>
+            <li><h3>Followed finally by Submit button</h3></li>
+        </ol>
+        <form id="inflationForm">
+            <div class="buttons">                
+                <label for="amount" class="valueText">£:</label>
+                <input type="number" id="amount" class="amount" step=".01" required />
+
+                <label for="startDate" class="yearText">In year:</label>
+                <select id="startDate" value="123" required></select>
+
+                <label for="endDate" class="yearText">Cost in</label>
+                <select id="endDate" value="123" required></select>
+
+
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+        <div class="result">
+            <label for="result" class="result"></label>
+            <h2>Result<h2 id="result"></h2></h2>
+        </div>
+        <script src="InflationModule/dateDropDown.js" type="module"></script>
+        <script src="inflationCalculator.js" type="module"></script>
+    </main>
+</body>
+
+</html>
